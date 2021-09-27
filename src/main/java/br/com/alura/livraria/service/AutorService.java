@@ -17,10 +17,8 @@ public class AutorService {
 	private ModelMapper modelMapper = new ModelMapper();
 
 	public void cadastrar(AutorDto dto) {
-
 		Autor autor = modelMapper.map(dto, Autor.class);
 		autores.add(autor);
-
 	}
 
 	public List<AutorDto> listar() {
