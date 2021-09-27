@@ -18,15 +18,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Livro {
 
-	@NotBlank
-	@Length(min = 10)
 	private String titulo;
-	@NotBlank
-	@PastOrPresent
 	private LocalDate dataLancamento;
-	@NotBlank
-	@Length(min = 10)
 	private int numeroPaginas;
-	@NotBlank
 	private Autor autor;
 }
